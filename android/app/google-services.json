@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "453423048511",
+    "project_id": "flutter-login-counter-app",
+    "storage_bucket": "flutter-login-counter-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453423048511:android:82402514218d10cb9d158a",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ-Yc-nGxgAGX7EteOBuJTv-10aLchkjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453423048511:android:e76842b03d6157649d158a",
+        "android_client_info": {
+          "package_name": "com.example.flutter_login_counter_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ-Yc-nGxgAGX7EteOBuJTv-10aLchkjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
