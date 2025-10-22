@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("dev.flutter.flutter-gradle-plugin")
+    id("com.google.gms.google-services") 
 }
 
 android {
@@ -35,13 +36,11 @@ android {
 
 buildscript {
     dependencies {
-        classpath 'com.google.gms:google-services:4.3.15'
+        // Kotlin DSL syntax uses parentheses and double quotes
+        classpath("com.google.gms:google-services:4.3.15")
     }
 }
 
 flutter {
     source = "../.."
 }
-
-// Add this line at the very bottom
-apply(plugin = "com.google.gms.google-services")
