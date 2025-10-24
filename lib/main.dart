@@ -4,12 +4,14 @@ import 'package:flutter_login_counter_app/app.dart';
 import 'package:flutter_login_counter_app/firebase_options.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-void main()async {
-  WidgetsFlutterBinding.ensureInitialized();
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized(); //ensures widgets and Firebase setup before runApp.
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
-  );
-  runApp(ProviderScope(child: MyApp()));
+  ); // initializes Firebase services.
+  runApp(
+    ProviderScope(child: MyApp()),
+  ); //makes Riverpod providers globally accessible
 }
 
 class MainApp extends StatelessWidget {
@@ -18,11 +20,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+      home: Scaffold(body: Center(child: Text('Hello World!'))),
     );
   }
 }

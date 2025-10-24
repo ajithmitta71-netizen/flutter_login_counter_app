@@ -9,7 +9,7 @@ class MyApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final user = ref.watch(authStateProvider);
+    final user = ref.watch(authStateProvider); // listens to Firebase authentication state changes.
 
     return MaterialApp(
       title: 'Login Counter App',
